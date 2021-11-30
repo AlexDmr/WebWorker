@@ -1,0 +1,1 @@
+{"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","sources":["style.css"],"sourcesContent":["h1, h2 {\n  font-family: Lato;\n}\n\ntable {\n  border-collapse: collapse;\n  border: solid black 1px;\n}\n\ntable td, table th {\n  border: solid black 1px;\n}"],"names":[],"version":3,"file":"index.de101254.css.map","sourceRoot":"/__parcel_source_root/"}

@@ -1,0 +1,2 @@
+async function o(o){const e=require(o);console.log(o,":",e);const n=new Blob([e],{type:"application/javascript"});return URL.createObjectURL(n)}!async function(){const e=new Worker(await o("./fibonnacci1.ts")),n=new Worker(await o("./fibonnacci2"));e.postMessage(40),n.postMessage(40),e.onmessage=o=>console.log("Worker 1 :",o.data),e.onerror=o=>console.error(o),n.onmessage=o=>console.log("Worker 2 :",o.data),n.onerror=o=>console.error(o)}();
+//# sourceMappingURL=index.78188a6a.js.map
