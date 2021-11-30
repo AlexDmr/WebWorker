@@ -1,4 +1,6 @@
-  function fibo2(n) {
+// export {};
+
+function fibo(n) {
     if (n < 2) return n;
     let n2 = 0;
     let n1 = 1;
@@ -11,6 +13,6 @@
   onmessage = (msg) => {
     const start = Date.now();
     const nb = msg.data;
-    const result = fibo2(nb);
+    const result = fibo(nb);
     postMessage( {duration: Date.now() - start, nb, result} );
   }

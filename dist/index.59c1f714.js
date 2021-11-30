@@ -484,8 +484,8 @@ Promise.all([
 });
 // Function that will handle compuatation distribution
 async function go(w1, w2) {
-    w1.postMessage(2);
-    w2.postMessage(2);
+    w1.postMessage(MIN);
+    w2.postMessage(MIN);
     w1.onmessage = (msg)=>{
         document.querySelector(`table tr:nth-child(${msg.data.nb - MIN + 1}) td:nth-child(2)`).textContent = JSON.stringify(msg.data);
         if (msg.data.nb < MAX) w1.postMessage(msg.data.nb + 1);
