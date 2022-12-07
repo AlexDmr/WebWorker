@@ -1,6 +1,6 @@
 {
   "name": "theme-jsa-webworker-demo-1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "build": "parcel build index.html",
@@ -10,9 +10,9 @@
     "staticPath": "public"
   },
   "dependencies": {
-    "parcel": "^2.0.1"
+    "parcel": "^2.8.0"
   },
   "devDependencies": {
-    "parcel-reporter-static-files-copy": "^1.3.4"
+    "parcel-reporter-static-files-copy": "^1.4.0"
   }
 }
