@@ -3,10 +3,30 @@
   <head>
     <title>My First Parcel App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <h1>Thème JSA : démonstration Web Workers</h1>
+    
+      Calculer 
+      <ul>
+        <li><input id="checkRec" type="checkbox" />Récursion naïve</li>
+        <li><input id="checkLin" type="checkbox" checked/>Version linéaire</li>
+        <li><input id="checkLog" type="checkbox" checked/>Version logarithmique (matrices)</li>
+      </ul>
+
+    <label>
+      De <input type="number" id="MIN" value="0"/>
+      à <input type="number" id="MAX" value="1000000"/>
+      <label>exponentiel <input type="checkbox" id="P" checked /></label>
+    </label>
     <button>Démarrer les calculs</button>
+
+    <div>
+      <canvas id="chartFibo"></canvas>
+    </div>
+
+    <!--
     <table>
         <thead>
             <th>Fibonnacci(nb)</th>
@@ -17,6 +37,7 @@
             
         </tbody>
     </table>
+    -->
     <script type="module" src="index.ts"></script>
   </body>
 </html>
