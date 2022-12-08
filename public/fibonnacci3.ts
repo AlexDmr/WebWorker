@@ -29,6 +29,7 @@ function fibo(n) {
     const start = Date.now();
     const nb = msg.data;
     const result = fibo(nb);
+    console.log(`fibo3(${nb}) = ${result}`)
     postMessage( {duration: Date.now() - start, nb, result} );
   }
 
